@@ -50,4 +50,53 @@ body {
   font: var(--body1);
   color: var(--grey);
 }
+
+.wrapper {
+  max-inline-size: 74.25rem;
+  -webkit-padding-start: var(--sm);
+          padding-inline-start: var(--sm);
+  -webkit-padding-end: var(--sm);
+          padding-inline-end: var(--sm);
+  margin: 0 auto;
+}
+
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--bg);
+  min-block-size: 4rem;
+}
+
+.header__menu {
+  background-color: transparent;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  background-image: url(../icons/menu.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 992px) {
+  .header__menu {
+    display: none;
+  }
+}
+
+.brand {
+  font: var(--logo);
+  color: var(--white);
+  text-decoration: none;
+  cursor: pointer;
+}
 /*# sourceMappingURL=index.css.map */

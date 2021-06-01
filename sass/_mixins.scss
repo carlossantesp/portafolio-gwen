@@ -1,0 +1,23 @@
+@mixin flexBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin flexColum {
+  display: flex;
+  flex-direction: column;
+}
+@mixin topSticky {
+  position: sticky;
+  top: 0;
+}
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media screen and (min-width: 992px) {
+    @content;
+  }
+}

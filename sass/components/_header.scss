@@ -1,0 +1,18 @@
+.header {
+  @include topSticky;
+  @include flexBetween;
+  background-color: var(--bg);
+  min-block-size: 4rem;
+  &__menu {
+    background-color: transparent;
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    background-image: url(../icons/menu.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    @include desktop {
+      display: none;
+    }
+  }
+}
