@@ -1,7 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Montserrat:wght@700&display=swap");
+$buttonPrimary: #7f5af0;
+$buttonSecondary: #16161a;
+
 :root {
   --fontPrimary: "Arvo", serif;
   --fontLogo: "Montserrat", sans-serif;
+
+  // Colores
   --bg: #16161a;
   --bg-alt: #242629;
   --primary: #7f5af0;
@@ -9,6 +13,8 @@
   --tertiary: #2cb67d;
   --white: #fffffe;
   --grey: #94a1b2;
+
+  // Headlines
   --headline1: 700 72px / 80px var(--fontPrimary);
   --headline2: 700 64px / 76px var(--fontPrimary);
   --headline3: 700 32px / 32px var(--fontPrimary);
@@ -20,6 +26,8 @@
   --body2-bold: 400 14px / 27px var(--fontPrimary);
   --button: 400 18px / 27px var(--fontPrimary);
   --logo: 700 24px / 24px var(--fontLogo);
+
+  // Paddings
   --pd-btn: 0.75rem 1.5rem;
   --sm: 1rem;
   --md: 2rem;
@@ -27,27 +35,3 @@
   --xlg: 4rem;
   --xxlg: 5rem;
 }
-
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-}
-
-body {
-  background-color: var(--bg);
-  font: var(--body1);
-  color: var(--grey);
-}
-/*# sourceMappingURL=index.css.map */
