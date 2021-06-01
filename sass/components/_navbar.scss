@@ -1,0 +1,24 @@
+.navbar {
+  @include flexColumn;
+  align-items: center;
+  gap: 48px;
+  padding-block-start: 120px;
+  &__item {
+    list-style: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+    &--active a {
+      color: var(--white);
+    }
+  }
+  &__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font: var(--headline3);
+    color: var(--secondary);
+    &:hover {
+      color: var(--white);
+    }
+  }
+}

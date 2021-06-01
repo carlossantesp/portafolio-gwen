@@ -11,8 +11,24 @@
     background-image: url(../icons/menu.svg);
     background-position: center;
     background-repeat: no-repeat;
+    &--active {
+      background-image: url(../icons/cancel.svg);
+    }
     @include desktop {
       display: none;
+    }
+  }
+  &__nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg);
+    transform: scale(1, 0);
+    transition: transform 0.25s ease-in-out;
+    &--active {
+      transform: scale(1, 1);
     }
   }
 }
