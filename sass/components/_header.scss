@@ -15,7 +15,7 @@
     &--active {
       background-image: url(../icons/cancel.svg);
     }
-    @include desktop {
+    @include tablet {
       display: none;
     }
   }
@@ -31,6 +31,14 @@
     transition: transform 0.25s ease-in-out;
     &--active {
       transform: scale(1, 1);
+    }
+    @include tablet {
+      position: initial;
+      inset: initial;
+      height: auto;
+      width: auto;
+      background-color: transparent;
+      transform: initial;
     }
   }
 }

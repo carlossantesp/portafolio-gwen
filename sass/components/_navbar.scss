@@ -1,8 +1,8 @@
 .navbar {
   @include flexColumn;
   align-items: center;
-  gap: 48px;
-  padding-block-start: 120px;
+  gap: 3rem;
+  padding-block-start: 7.5rem;
   &__item {
     list-style: none;
     display: block;
@@ -19,6 +19,14 @@
     color: var(--secondary);
     &:hover {
       color: var(--white);
+    }
+  }
+  @include tablet {
+    padding-block-start: 0;
+    flex-direction: initial;
+    gap: 2.5rem;
+    &__link {
+      font: var(--body2-bold);
     }
   }
 }

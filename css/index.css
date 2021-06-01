@@ -17,7 +17,7 @@
   --body1: 400 18px / 27px var(--fontPrimary);
   --body1-bold: 700 18px / 27px var(--fontPrimary);
   --body2: 400 14px / 27px var(--fontPrimary);
-  --body2-bold: 400 14px / 27px var(--fontPrimary);
+  --body2-bold: 700 14px / 27px var(--fontPrimary);
   --button: 400 18px / 27px var(--fontPrimary);
   --logo: 700 24px / 24px var(--fontLogo);
   --pd-btn: 0.75rem 1.5rem;
@@ -92,7 +92,7 @@ body {
   background-image: url(../icons/cancel.svg);
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .header__menu {
     display: none;
   }
@@ -118,6 +118,18 @@ body {
 .header__nav--active {
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .header__nav {
+    position: initial;
+    inset: initial;
+    height: auto;
+    width: auto;
+    background-color: transparent;
+    -webkit-transform: initial;
+            transform: initial;
+  }
 }
 
 .brand {
@@ -531,9 +543,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 48px;
-  -webkit-padding-before: 120px;
-          padding-block-start: 120px;
+  gap: 3rem;
+  -webkit-padding-before: 7.5rem;
+          padding-block-start: 7.5rem;
 }
 
 .navbar__item {
@@ -556,5 +568,20 @@ body {
 
 .navbar__link:hover {
   color: var(--white);
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    -webkit-padding-before: 0;
+            padding-block-start: 0;
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
+    gap: 2.5rem;
+  }
+  .navbar__link {
+    font: var(--body2-bold);
+  }
 }
 /*# sourceMappingURL=index.css.map */
