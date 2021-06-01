@@ -1,0 +1,27 @@
+.btn {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--white);
+  display: inline-block;
+  padding: var(--pd-btn);
+  background-color: transparent;
+  border-radius: 0.25rem;
+  font: var(--button);
+  text-align: center;
+  transition: background 0.25s ease-in-out;
+  &__primary {
+    background-color: $buttonPrimary;
+    &:hover {
+      background-color: darken($buttonPrimary, 5%);
+    }
+  }
+  &__secondary {
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    background-color: $buttonSecondary;
+    &:hover {
+      background-color: lighten($buttonSecondary, 30%);
+      color: var(--white);
+    }
+  }
+}

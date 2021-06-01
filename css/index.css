@@ -52,7 +52,7 @@ body {
 }
 
 .wrapper {
-  max-inline-size: 74.25rem;
+  max-inline-size: 76.25rem;
   -webkit-padding-start: var(--sm);
           padding-inline-start: var(--sm);
   -webkit-padding-end: var(--sm);
@@ -98,5 +98,85 @@ body {
   color: var(--white);
   text-decoration: none;
   cursor: pointer;
+}
+
+.btn {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--white);
+  display: inline-block;
+  padding: var(--pd-btn);
+  background-color: transparent;
+  border-radius: 0.25rem;
+  font: var(--button);
+  text-align: center;
+  -webkit-transition: background 0.25s ease-in-out;
+  transition: background 0.25s ease-in-out;
+}
+
+.btn__primary {
+  background-color: #7f5af0;
+}
+
+.btn__primary:hover {
+  background-color: #6d43ee;
+}
+
+.btn__secondary {
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  background-color: #16161a;
+}
+
+.btn__secondary:hover {
+  background-color: #5c5c6d;
+  color: var(--white);
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: var(--sm);
+  -webkit-padding-before: var(--xxlg);
+          padding-block-start: var(--xxlg);
+  -webkit-padding-after: var(--xxlg);
+          padding-block-end: var(--xxlg);
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    gap: 1.5rem;
+  }
+}
+
+.hero__title {
+  font: var(--headline4);
+  color: var(--white);
+}
+
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font: var(--headline3);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .hero__title {
+    font: var(--headline1);
+  }
+}
+
+.hero__description {
+  max-inline-size: 36.25rem;
+}
+
+.hero a {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 /*# sourceMappingURL=index.css.map */

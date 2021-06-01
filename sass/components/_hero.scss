@@ -1,0 +1,25 @@
+.hero {
+  @include flexColumn;
+  gap: var(--sm);
+  padding-block-start: var(--xxlg);
+  padding-block-end: var(--xxlg);
+  @include tablet {
+    gap: 1.5rem;
+  }
+  &__title {
+    font: var(--headline4);
+    color: var(--white);
+    @include tablet {
+      font: var(--headline3);
+    }
+    @include desktop {
+      font: var(--headline1);
+    }
+  }
+  &__description {
+    max-inline-size: 36.25rem;
+  }
+  a {
+    align-self: flex-start;
+  }
+}
