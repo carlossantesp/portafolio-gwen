@@ -1,0 +1,51 @@
+.project {
+  @include flexColumn;
+  gap: var(--sm);
+  @include tablet {
+    gap: var(--lg);
+  }
+  &__img {
+    text-align: center;
+    img {
+      width: 100%;
+      display: block;
+      height: 18.75rem;
+      overflow: hidden;
+      object-fit: cover;
+      object-position: center;
+      @include tablet {
+        height: 21.875rem;
+        object-position: top;
+      }
+      @include desktop {
+        height: auto;
+      }
+    }
+  }
+  &__info {
+    @include flexColumn;
+    gap: var(--sm);
+  }
+  &__title {
+    font: var(--body1);
+  }
+  &__description {
+    font: var(--headline5);
+    @include desktop {
+      font: var(--headline3);
+    }
+  }
+  &__btn {
+    @include flexColumn;
+    gap: var(--sm);
+    a:nth-child(1) {
+      order: 2;
+    }
+    @include tablet {
+      flex-direction: initial;
+      a:nth-child(1) {
+        order: initial;
+      }
+    }
+  }
+}
