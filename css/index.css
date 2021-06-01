@@ -399,4 +399,97 @@ body {
     height: auto;
   }
 }
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+  -webkit-padding-before: var(--xlg);
+          padding-block-start: var(--xlg);
+  -webkit-padding-after: var(--xlg);
+          padding-block-end: var(--xlg);
+  font: var(--headline4);
+}
+
+@media screen and (min-width: 768px) {
+  .contact {
+    -webkit-padding-before: var(--xxlg);
+            padding-block-start: var(--xxlg);
+    -webkit-padding-after: var(--xxlg);
+            padding-block-end: var(--xxlg);
+    gap: var(--lg);
+    font: var(--headline3);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .contact {
+    gap: var(--xxlg);
+    font: var(--headline2);
+  }
+}
+
+.contact__description {
+  color: var(--white);
+}
+
+.contact__email {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.contact__email:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  -webkit-padding-before: var(--lg);
+          padding-block-start: var(--lg);
+  -webkit-padding-after: var(--lg);
+          padding-block-end: var(--lg);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  gap: var(--md);
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    -webkit-padding-before: var(--xxlg);
+            padding-block-start: var(--xxlg);
+    -webkit-padding-after: var(--xxlg);
+            padding-block-end: var(--xxlg);
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.footer__col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: vr(--sm);
+}
+
+.footer__link {
+  font: var(--body2);
+  color: var(--white);
+  text-decoration: none;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
 /*# sourceMappingURL=index.css.map */

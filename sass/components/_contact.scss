@@ -1,0 +1,27 @@
+.contact {
+  @include flexColumn;
+  gap: 1.5rem;
+  padding-block-start: var(--xlg);
+  padding-block-end: var(--xlg);
+  font: var(--headline4);
+  @include tablet {
+    padding-block-start: var(--xxlg);
+    padding-block-end: var(--xxlg);
+    gap: var(--lg);
+    font: var(--headline3);
+  }
+  @include desktop {
+    gap: var(--xxlg);
+    font: var(--headline2);
+  }
+  &__description {
+    color: var(--white);
+  }
+  &__email {
+    color: var(--primary);
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
